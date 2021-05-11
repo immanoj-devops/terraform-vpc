@@ -1,7 +1,6 @@
 resource "aws_vpc" "main" {
 
-  cidr_block         = var.VPC_CIDR
-  enable_dns_support = "true"
+  cidr_block = var.VPC_CIDR
   tags = {
     Name = "${var.ENV}-VPC"
   }
