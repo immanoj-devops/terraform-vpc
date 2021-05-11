@@ -34,7 +34,6 @@ resource "aws_route_table_association" "pub-rt-association" {
 
 resource "aws_route_table_association" "prv-rt-association" {
   count          = length(var.PRV_SUBNET_CIDR)
-  
   subnet_id      = aws_subnet.private.*.id[0]
   route_table_id = aws_route_table.prv-rt.id
 }
