@@ -3,5 +3,5 @@ data "aws_vpc" "default" {
 }
 
 output "view" {
-    value = data.aws_vpc.default
+    value = "data.aws_vpc.default
 }
