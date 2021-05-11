@@ -1,5 +1,5 @@
 resource "aws_route_table" "pub-rt" {
-  vpc_id = aws_vpc.main.id
+  vpc_id = aws_vpc.example.id
 
   route {
     cidr_block = "0.0.0.0/0"
