@@ -15,6 +15,6 @@ resource "aws_subnet" "private" {
   cidr_block        = element(var.PRV_SUBNET_CIDR , count.index)
 
   tags = {
-    Name = "${var.PROJECT_NAME}-PrvSubnet-${count.index+1}"
+    Name = "${var.PROJECT_NAME}-PubSubnet-${count.index+1}"
   }
 }
