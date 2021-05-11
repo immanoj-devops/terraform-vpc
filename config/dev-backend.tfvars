@@ -1,4 +1,4 @@
     bucket = "terrafrom-learning-bucket"
-    key    = "stage/terraform.tfstate"
+    key    = "roboshop/terraform.tfstate"
     region = "us-east-1"
     
