@@ -18,7 +18,7 @@ resource "aws_route_table" "pub-rt" {
 
 
 
-resource "aws_route_table" "prv-rt" {
+resource "aws_route_table" "pub-rt" {
   vpc_id = aws_vpc.example.id
 
   route {
