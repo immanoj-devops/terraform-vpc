@@ -5,4 +5,3 @@ resource "aws_internet_gateway" "gw" {
     Name = "${var.PROJECT_NAME}-IGW"
   }
 }
-
