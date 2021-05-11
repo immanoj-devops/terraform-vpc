@@ -31,7 +31,7 @@ resource "aws_route_table_association" "pub-rt-association" {
   route_table_id = aws_route_table.pub-rt.id
 }
 
-resource "aws_route_table_association" "prv-rt-association" {
+resource "aws_route_table_association" "pub-rt-association" {
   subnet_id      = aws_subnet.public.*.id[0]
   route_table_id = aws_route_table.pub-rt.id
 }
