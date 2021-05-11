@@ -8,7 +8,7 @@ resource "aws_route_table" "pub-rt" {
 
   route {
     cidr_block = "data.aws_vpc.default.cidr_block"
-    gateway_id = 
+    gateway_id = aws_internet_gateway.gw.id
   }
 
   tags = {
