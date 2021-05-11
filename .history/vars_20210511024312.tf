@@ -5,5 +5,3 @@ variable "PUB_SUBNET_CIDR" {}
 var "PRV_SUBNET_CIDR"  {}
 
 
-
-
