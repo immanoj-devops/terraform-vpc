@@ -27,6 +27,6 @@ resource "aws_route_table" "prv-rt" {
   }
 
   tags = {
-    Name = "Name = "${var.PROJECT_NAME}-PrvRT""
+    Name = "Name = "${var.PROJECT_NAME}-PubRT""
   }
 }
