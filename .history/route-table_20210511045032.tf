@@ -18,7 +18,7 @@ resource "aws_route_table" "prv-rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id = aws_nat_gateway.natgq.id
+    gateway_id = aws_nat_gateway.example.id
   }
 
   tags = {
