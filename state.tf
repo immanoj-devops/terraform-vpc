@@ -1,5 +1,5 @@
 terraform {
   backend "s3" {
-    region
+    region = "us-east-1"
   }
 }
