@@ -7,8 +7,8 @@ resource "aws_route_table" "pub-rt" {
   }
 
   route {
-    cidr_block = data.aws_vpc.default.cidr_block
-    gateway_id = aws_vpc_peering_connection
+    cidr_block = data.aws_vpc.default.cidr_block"
+    gateway_id = 
   }
 
   tags = {
