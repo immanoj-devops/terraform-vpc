@@ -22,6 +22,6 @@ resource "aws_route_table" "prv-rt" {
   }
 
   tags = {
-    Name = "Name = "${var.PROJECT_NAME}-Private-RT""
+    Name = "Name = "${var.PROJECT_NAME}-PrivateRT""
   }
 }
