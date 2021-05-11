@@ -27,6 +27,6 @@ resource "aws_route_table" "prv-rt" {
 }
 
 resource "aws_route_table_association" "pub-rt-association" {
-  subnet_id      = aws_subnet.public.*.id[0]
+  subnet_id      = aws_subnet.public.id
   route_table_id = aws_route_table.bar.id
 }
