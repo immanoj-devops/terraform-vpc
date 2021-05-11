@@ -12,7 +12,7 @@ resource "aws_subnet" "public" {
 resource "aws_subnet" "private" {
   vpc_id            = aws_vpc.main.id
   count             = length(var.PRV_SUBNET_CIDR)
-  cidr_block        =  element(var.PUB_SUBNET_CIDR , count.index)
+  cidr_block        = ""
 
   tags = {
     Name = "Main"
