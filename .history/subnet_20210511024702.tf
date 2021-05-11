@@ -1,6 +1,6 @@
 resource "aws_subnet" "public" {
   vpc_id            = aws_vpc.main.id
-  count             = length(var.PUB_SUBNET_CIDR)
+  count             = length(var.PUB)
   cidr_block        = "element()"
 
   tags = {
