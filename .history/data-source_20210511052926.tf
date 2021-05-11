@@ -1,4 +1,4 @@
-data "aws_vpc" "vpcid" {
+data "aws_vpc" "vpc" {
   id = var.vpc_id
 }
 
